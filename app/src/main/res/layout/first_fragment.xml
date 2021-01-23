@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/quepex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dehola"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/quepex2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_chavos"
+        android:textColor="@color/purple_200"
+        app:layout_constraintTop_toBottomOf="@id/quepex"
+        app:layout_constraintEnd_toEndOf="@id/quepex"
+        app:layout_constraintStart_toStartOf="@id/quepex"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/elinput"
+        android:layout_width="@dimen/elinput_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/quepex2"
+        app:layout_constraintEnd_toEndOf="@id/quepex2"
+        app:layout_constraintStart_toStartOf="@id/quepex2"
+        android:hint="@string/string_name"
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/elinput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/text_buttom"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

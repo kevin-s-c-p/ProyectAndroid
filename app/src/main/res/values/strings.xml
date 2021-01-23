@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Holamundo</string>
+    <string name="string_name">Ingrese X cosa</string>
+    <string name="string_chavos">QUEONDACHAVOS</string>
+    <string name="dehola">HOLA</string>
+    <string name="text_buttom">Enviar</string>
+</resources>

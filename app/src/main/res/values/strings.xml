@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">Holamundo</string>
-    <string name="string_name">Ingrese X cosa</string>
+    <string name="input_name">Nombre completo</string>
     <string name="string_chavos">QUEONDACHAVOS</string>
     <string name="dehola">HOLA</string>
     <string name="text_buttom">Enviar</string>
+    <string name="name_person">Nombre:</string>
+    <string name="email_person">E-mail:</string>
+    <string name="input_email">Ingrese su Correo</string>
+    <string name="cellphone_person">Telefono:</string>
+    <string name="input_cellphone">Ingrese su Telefono</string>
+    <string name="password_person">Password:</string>
+    <string name="input_password">Ingrese su Contraseña</string>
 </resources>

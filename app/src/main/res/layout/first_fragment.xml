@@ -13,8 +13,11 @@
         android:text="@string/dehola"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191" />
+
     <TextView
         android:id="@+id/quepex2"
         android:layout_width="wrap_content"
@@ -30,24 +33,94 @@
     <EditText
         android:id="@+id/elinput"
         android:layout_width="@dimen/elinput_width"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/quepex2"
-        app:layout_constraintEnd_toEndOf="@id/quepex2"
-        app:layout_constraintStart_toStartOf="@id/quepex2"
-        android:hint="@string/string_name"
+        android:layout_height="40dp"
+        android:hint="@string/input_name"
         android:inputType="text"
-        />
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@+id/name" />
+
     <Button
         android:id="@+id/enviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/elinput"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:text="@string/text_buttom"
-        />
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="56dp"
+        android:paddingTop="6dp"
+        android:text="@string/name_person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quepex2" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="@string/email_person"
+        app:layout_constraintBottom_toBottomOf="@+id/email_input"
+        app:layout_constraintStart_toStartOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="@dimen/elinput_width"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/input_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/elinput"
+        app:layout_constraintStart_toStartOf="@+id/elinput"
+        app:layout_constraintTop_toBottomOf="@+id/elinput" />
+
+    <EditText
+        android:id="@+id/cellphone_input"
+        android:layout_width="@dimen/elinput_width"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/input_cellphone"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/email_input"
+        app:layout_constraintStart_toStartOf="@+id/email_input"
+        app:layout_constraintTop_toBottomOf="@+id/email_input" />
+
+    <TextView
+        android:id="@+id/cellphone"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="@string/cellphone_person"
+        app:layout_constraintBottom_toBottomOf="@+id/cellphone_input"
+        app:layout_constraintStart_toStartOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="@string/password_person"
+        app:layout_constraintBottom_toBottomOf="@+id/password_input"
+        app:layout_constraintStart_toStartOf="@+id/cellphone" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="@dimen/elinput_width"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/input_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/cellphone_input"
+        app:layout_constraintStart_toStartOf="@+id/cellphone_input"
+        app:layout_constraintTop_toBottomOf="@+id/cellphone_input" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

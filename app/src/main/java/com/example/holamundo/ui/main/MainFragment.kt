@@ -25,6 +25,7 @@ class MainFragment : Fragment() {
     private lateinit var viewModel: MainViewModel
     private lateinit var textView: TextView
     private lateinit var textView2: TextView
+    private lateinit var textViewName: TextView
     private lateinit var input: EditText
     private lateinit var sendButton: Button
 
@@ -46,6 +47,7 @@ class MainFragment : Fragment() {
         textView2 = view.findViewById(R.id.quepex2)
         input = view.findViewById(R.id.elinput)
         sendButton = view.findViewById(R.id.enviar)
+        textViewName = view.findViewById(R.id.name)
     }
 
     override fun onResume() {

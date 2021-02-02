@@ -11,9 +11,9 @@ class MainViewModel : ViewModel() {
     }
 
     fun concatenateInput(concatenatedString:ArrayList<EditText>):String{
-        val informationUser = "Correo : ${concatenatedString[1].text} \n Numero: ${concatenatedString[2].text} \n Contraseña: ${concatenatedString[3].text}"
+        //val informationUser = "Correo : ${concatenatedString[1].text} \n Numero: ${concatenatedString[2].text} \n Contraseña: ${concatenatedString[3].text}"
 
-        return informationUser
+        return "Correo : ${concatenatedString[1].text} \n Numero: ${concatenatedString[2].text} \n Contraseña: ${concatenatedString[3].text}"
     }
 
     fun holas(holas:String):String = "Que onda x2 $holas"

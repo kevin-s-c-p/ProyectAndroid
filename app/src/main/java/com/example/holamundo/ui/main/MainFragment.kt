@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import com.example.holamundo.R
 
 class MainFragment : Fragment() {
@@ -58,13 +59,21 @@ class MainFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        textView.text = viewModel.firstFunction()
+        //textView.text = viewModel.firstFunction()
         sendButton.setOnClickListener { view ->
             val button = view as Button
             //setInput(button.text.toString())
             showInformation()
+            Toast.makeText(context, "Information send!",Toast.LENGTH_SHORT).show();
         }
+        //Show a mini-message
+        Toast.makeText(context, "onResume",Toast.LENGTH_SHORT).show();
     }
+
+    //Aplication in second plan
+    /*override fun onPause() {
+        super.onPause();
+    }*/
 
     private fun showInformation(){
         val infoPerson = arrayListOf<EditText>(inputName,inputEmail,inputNumber,inputPassword)
